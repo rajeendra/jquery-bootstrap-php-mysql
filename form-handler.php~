@@ -33,8 +33,8 @@ $message = mysqli_real_escape_string($db, $_POST['message']);
 $sql = "INSERT INTO form_submissions (name,phone,email,message) VALUES ('$name','$phone','$email','$message')";
 $result = $db->query($sql);
 
-$message = "wrong answer";
-echo "<script type='text/javascript'>alert('$email');</script>";
+//$message = "wrong answer";
+//echo "<script type='text/javascript'>alert('$email');</script>";
 
 // set up email
 $msg = "New contact form submission!\nName: " . $name . "\nEmail: " . $email . "\nPhone: " . $phone . "\nEmail: " . $email;
